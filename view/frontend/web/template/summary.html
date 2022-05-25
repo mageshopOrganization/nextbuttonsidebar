@@ -1,0 +1,22 @@
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<div class="opc-block-summary" data-bind="blockLoader: isLoading">
+    <span data-bind="i18n: 'Order Summary'" class="title"></span>
+    <!-- ko foreach: elems() -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+    <!-- /ko -->
+</div>
+
+<!-- ko if: ((!isLoggedIn() && isVisibleShippingButton() == '1') || (isLoggedIn() && isVisibleShippingButton() == '0')) -->
+<div class="actions-toolbar-trigger" id="continue-to-payment-trigger-wrapper">
+    <div class="primary">
+        <button type="button" id="continue-to-payment-trigger" class="button action continue primary">
+            <span><!-- ko i18n: 'Next'--><!-- /ko --></span>
+        </button>
+    </div>
+</div>
+<!-- /ko -->

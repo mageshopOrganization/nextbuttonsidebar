@@ -1,0 +1,16 @@
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .custom-slide.opc-summary-wrapper {
+        .modal-inner-wrap {
+            .actions-toolbar-trigger {
+                display: none;
+            }
+        }
+    }
+}
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .checkout-shipping-method {
+        .actions-toolbar {
+            display: none;
+        }
+    }
+}

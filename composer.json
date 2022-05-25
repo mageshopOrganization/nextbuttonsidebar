@@ -1,0 +1,29 @@
+{
+    "name": "mageshop/module-nextbuttonsidebar",
+    "description": "Move 'Next' button to Order Summary at checkout",
+    "type": "magento2-module",
+    "license": [
+
+    ],
+    "authors": [
+        {
+            "email": "daniel@tryideas.com.br",
+            "name": "Mageshop"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "MageShop\\NextButtonSidebar\\": ""
+        }
+    },
+    "extra": {
+        "map": [
+            [
+                "*",
+                "MageShop/NextButtonSidebar"
+            ]
+        ]
+    }
+}
